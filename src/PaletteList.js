@@ -45,12 +45,12 @@ class PaletteList extends Component {
       <div className={classes.root}>
         <div className={classes.container}>
           <dir className={classes.nav}>
-            <h1>React Colors</h1>
-            <Link to="/palette/new">CREATE NEW PALETTE</Link>
+            <h1>uiColors</h1>
+            <Link to='/palette/new'>CREATE NEW PALETTE</Link>
           </dir>
           <TransitionGroup className={classes.palettes}>
             {palettes.map((palette, i) => (
-              <CSSTransition key={palette.id} timeout={500} classNames="fade">
+              <CSSTransition key={palette.id} timeout={500} classNames='fade'>
                 <MiniPalette
                   key={palette.id}
                   palette={palette}
@@ -64,9 +64,9 @@ class PaletteList extends Component {
         <Dialog
           open={this.state.deleteDialogOpen}
           onClose={this.closeDialog}
-          aria-labelledby="delete-palette-dialog"
+          aria-labelledby='delete-palette-dialog'
         >
-          <DialogTitle id="delete-palette-dialog-title">
+          <DialogTitle id='delete-palette-dialog-title'>
             Delete this palette?
           </DialogTitle>
           <List>
@@ -84,7 +84,7 @@ class PaletteList extends Component {
                   <CheckIcon />
                 </Avatar>
               </ListItemAvatar>
-              <ListItemText primary="Delete" />
+              <ListItemText primary='Delete' />
             </ListItem>
             <ListItem button onClick={this.closeDeleteDialog}>
               <ListItemAvatar>
@@ -92,7 +92,7 @@ class PaletteList extends Component {
                   <CloseIcon />
                 </Avatar>
               </ListItemAvatar>
-              <ListItemText primary="Cancel" />
+              <ListItemText primary='Cancel' />
             </ListItem>
           </List>
         </Dialog>

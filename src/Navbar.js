@@ -30,7 +30,7 @@ class Navbar extends Component {
     return (
       <header className={classes.Navbar}>
         <div className={classes.logo}>
-          <Link to="/">reactcolorpicker</Link>
+          <Link to='/'>uiColors</Link>
         </div>
         {showLevelSlider && (
           <div>
@@ -48,9 +48,9 @@ class Navbar extends Component {
         )}
         <div className={classes.selectContainer}>
           <Select value={format} onChange={this.changeFormat}>
-            <MenuItem value="hex">HEX - #ffffffff</MenuItem>
-            <MenuItem value="rgb">RGB - rgb(255,255,255)</MenuItem>
-            <MenuItem value="rgba">RGBA - rgba(255,255,255,1.0)</MenuItem>
+            <MenuItem value='hex'>HEX - #ffffffff</MenuItem>
+            <MenuItem value='rgb'>RGB - rgb(255,255,255)</MenuItem>
+            <MenuItem value='rgba'>RGBA - rgba(255,255,255,1.0)</MenuItem>
           </Select>
         </div>
         <Snackbar
@@ -58,7 +58,7 @@ class Navbar extends Component {
           open={this.state.snackBarOpen}
           autoHideDuration={3000}
           message={
-            <span id="message-id">
+            <span id='message-id'>
               Format Changed to {format.toUpperCase()}
             </span>
           }
@@ -69,9 +69,9 @@ class Navbar extends Component {
           action={[
             <IconButton
               onClick={this.closeSnackbar}
-              color="inherit"
-              key="close"
-              aria-label="close"
+              color='inherit'
+              key='close'
+              aria-label='close'
             >
               <CloseIcon />
             </IconButton>
