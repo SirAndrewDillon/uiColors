@@ -1,5 +1,5 @@
 {
-  "homepage": "https://github.com/SirAndrewDillon/uiColors",
+  "homepage": "https://github.com/SirAndrewDillon/uiColorsy",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -62,7 +62,6 @@
     "eslint-plugin-react": "^7.17.0",
     "eslint-plugin-react-hooks": "^1.7.0",
     "eslint-plugin-standard": "^4.0.1",
-    "husky": "^3.1.0",
     "lint-staged": "^9.5.0",
     "now": "^17.0.1",
     "now-serve": "^0.5.1",
