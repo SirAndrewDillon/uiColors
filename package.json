@@ -27,7 +27,6 @@
     "test": "react-scripts test --watchAll",
     "eject": "react-scripts eject",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d build",
     "lint:styles": "stylelint --fix --syntax=css src/**/*.css",
     "lint": "eslint --ext .js --ext .jsx --fix ./src",
     "format": "prettier \"src/**/*.{js,jsx,yml,yaml,ts,tsx,md,graphql,mdx}\" --write",
