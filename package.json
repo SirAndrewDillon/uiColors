@@ -1,5 +1,6 @@
 {
-  "homepage": "https://github.com/SirAndrewDillon/uiColorsy",
+  "homepage": "https://github.com/SirAndrewDillon/uiColors",
+  "name": "ColorsApp",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -24,10 +25,10 @@
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
-    "deploy": "npm run build && ns build",
     "test": "react-scripts test --watchAll",
     "eject": "react-scripts eject",
     "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "lint:styles": "stylelint --fix --syntax=css src/**/*.css",
     "lint": "eslint --ext .js --ext .jsx --fix ./src",
     "format": "prettier \"src/**/*.{js,jsx,yml,yaml,ts,tsx,md,graphql,mdx}\" --write",
@@ -62,9 +63,8 @@
     "eslint-plugin-react": "^7.17.0",
     "eslint-plugin-react-hooks": "^1.7.0",
     "eslint-plugin-standard": "^4.0.1",
+    "husky": "^3.1.0",
     "lint-staged": "^9.5.0",
-    "now": "^17.0.1",
-    "now-serve": "^0.5.1",
     "prettier": "^1.19.1",
     "prop-type": "^0.0.1",
     "stylelint": "^12.0.0",
