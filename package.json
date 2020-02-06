@@ -1,5 +1,5 @@
 {
-  "homepage": "https://ArturW1998.github.io/ColorsApp",
+  "homepage": "https://github.com/SirAndrewDillon/uiColors",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -24,6 +24,7 @@
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
+    "deploy": "npm run build && ns build",
     "test": "react-scripts test --watchAll",
     "eject": "react-scripts eject",
     "predeploy": "npm run build",
@@ -63,6 +64,8 @@
     "eslint-plugin-standard": "^4.0.1",
     "husky": "^3.1.0",
     "lint-staged": "^9.5.0",
+    "now": "^17.0.1",
+    "now-serve": "^0.5.1",
     "prettier": "^1.19.1",
     "prop-type": "^0.0.1",
     "stylelint": "^12.0.0",
